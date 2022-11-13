@@ -8,7 +8,7 @@ public class Auto {
     String fabricante;
     Double peso;
     Double largo;
-    Integer velocidad;
+    int velocidad;
 
     // CONSTRUCTOR
     public Auto(String color, String nombre, String fabricante, Double peso, Double largo) {
@@ -20,17 +20,17 @@ public class Auto {
     }
 
     //MÉTODOS
-    public void acelerar(Integer cantidad) {
-        if (cantidad <= 120) {
+    public void acelerar(int cantidad) {
+        if (cantidad > 0 && cantidad <= 120) {
             this.velocidad += cantidad;
         }
     }
 
     @Override
     public String toString() {
-        return "Clases{" +
+        return "Auto{" +
                 "color='" + color + '\'' +
-                ", nombre='" + nombre + '\'' +
+                ", modelo='" + nombre + '\'' +
                 ", fabricante='" + fabricante + '\'' +
                 ", peso=" + peso +
                 ", largo=" + largo +
