@@ -1,6 +1,6 @@
 package com.company;
 
-public class Clases {
+public class Auto {
 
     // ATRIBUTOS
     String color;
@@ -11,7 +11,7 @@ public class Clases {
     Integer velocidad;
 
     // CONSTRUCTOR
-    public Clases(String color, String nombre, String fabricante, Double peso, Double largo) {
+    public Auto(String color, String nombre, String fabricante, Double peso, Double largo) {
         this.color = color;
         this.nombre = nombre;
         this.fabricante = fabricante;
@@ -19,8 +19,7 @@ public class Clases {
         this.largo = largo;
     }
 
-    //COMPORTAMIENTO
-
+    //MÉTODOS
     public void acelerar(Integer cantidad) {
         if (cantidad <= 120) {
             this.velocidad += cantidad;
@@ -41,4 +40,3 @@ public class Clases {
 
 
 }
-
