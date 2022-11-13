@@ -19,6 +19,7 @@ public class Main {
         autoElectrico1.acelerar(100);
         System.out.println(autoElectrico1);
 
+
         // INSTANCIA DE SUPER
         AutoElectrico autoElectrico2 = new AutoElectrico("Verde", "Civic", "Honda", 1650.80, 5.2, 230, "Motor 2.3");
         System.out.println(autoElectrico2);

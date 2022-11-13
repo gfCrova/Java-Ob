@@ -11,6 +11,7 @@ public class AutoElectrico extends Auto {
         super(color, modelo, fabricante, largo, (double) velocidad);
         this.motorElectrico = motorElectrico;
     }
+
     @Override
     public String toString() {
         return "AutoElectrico{" +
