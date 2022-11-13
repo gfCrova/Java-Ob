@@ -10,16 +10,16 @@ public class Auto {
     Double largo;
     int velocidad;
 
-    // CONSTRUCTOR
+    // CONSTRUCTORES
+
+    public Auto() {
+    }
     public Auto(String color, String modelo, String fabricante, Double peso, Double largo) {
         this.color = color;
         this.modelo = modelo;
         this.fabricante = fabricante;
         this.peso = peso;
         this.largo = largo;
-    }
-
-    public Auto() {
     }
 
     //MÉTODOS
