@@ -12,6 +12,7 @@ public class AutoElectrico extends Auto {
         this.motorElectrico = motorElectrico;
     }
 
+    // SOBREESCRITURA (override)
     @Override
     public String toString() {
         return "AutoElectrico{" +
@@ -23,5 +24,12 @@ public class AutoElectrico extends Auto {
                 ", velocidad=" + velocidad +
                 ", motorElectrico='" + motorElectrico + '\'' +
                 '}';
+    }
+
+    // SOBREESCRITURA DE MÉTODO
+    @Override
+    public void acelerar(int cantidad){
+        int cantidadAjustada = cantidad * 2;
+        super.acelerar(cantidadAjustada);
     }
 }

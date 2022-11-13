@@ -11,17 +11,21 @@ public class Main {
         // INSTANCIA sin parametros
         AutoElectrico autoElectrico1 = new AutoElectrico();
         autoElectrico1.motorElectrico = "Motor 1.1";
-        autoElectrico1.modelo = "Honda";
+        autoElectrico1.modelo = "Civic";
         autoElectrico1.color = "Azul";
         autoElectrico1.peso = 1600.00;
         autoElectrico1.largo = 5.0;
-        autoElectrico1.fabricante = "civic";
-        autoElectrico1.acelerar(100);
+        autoElectrico1.fabricante = "Honda";
+        autoElectrico1.velocidad = 90;
+        autoElectrico1.acelerar(50);
         System.out.println(autoElectrico1);
 
 
         // INSTANCIA DE SUPER
-        AutoElectrico autoElectrico2 = new AutoElectrico("Verde", "Civic", "Honda", 1650.80, 5.2, 230, "Motor 2.3");
+        AutoElectrico autoElectrico2 = new AutoElectrico("Verde", "Civic", "Honda", 1650.80, 5.2, 50, "Motor 2.3");
+        System.out.println(autoElectrico2);
+
+        autoElectrico2.acelerar(200);
         System.out.println(autoElectrico2);
     }
 }

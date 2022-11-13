@@ -2,7 +2,7 @@ package com.company;
 
 public class Auto {
 
-    // ATRIBUTOS
+    // ATRIBUTOS DE LA CLASE
     String color;
     String modelo;
     String fabricante;
@@ -15,6 +15,9 @@ public class Auto {
     //public Auto() {}
 
     // CONSTRUCTOR
+
+    public Auto() {
+    }
     public Auto(String color, String modelo, String fabricante, Double peso, Double largo) {
         this.color = color;
         this.modelo = modelo;
@@ -23,12 +26,9 @@ public class Auto {
         this.largo = largo;
     }
 
-    public Auto() {
-    }
-
-    //MÉTODOS
+    //MÉTODOS DE CLASE
     public void acelerar(int cantidad) {
-        if (cantidad > 0 && cantidad <= 120) {
+        if (cantidad > 0 && cantidad <= 500) {
             this.velocidad += cantidad;
         }
     }
