@@ -4,19 +4,22 @@ public class Auto {
 
     // ATRIBUTOS
     String color;
-    String nombre;
+    String modelo;
     String fabricante;
     Double peso;
     Double largo;
     int velocidad;
 
     // CONSTRUCTOR
-    public Auto(String color, String nombre, String fabricante, Double peso, Double largo) {
+    public Auto(String color, String modelo, String fabricante, Double peso, Double largo) {
         this.color = color;
-        this.nombre = nombre;
+        this.modelo = modelo;
         this.fabricante = fabricante;
         this.peso = peso;
         this.largo = largo;
+    }
+
+    public Auto() {
     }
 
     //MÉTODOS
@@ -30,7 +33,7 @@ public class Auto {
     public String toString() {
         return "Auto{" +
                 "color='" + color + '\'' +
-                ", modelo='" + nombre + '\'' +
+                ", modelo='" + modelo + '\'' +
                 ", fabricante='" + fabricante + '\'' +
                 ", peso=" + peso +
                 ", largo=" + largo +
