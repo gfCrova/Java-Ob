@@ -4,12 +4,14 @@ public class HelloWorld {
 
     public static void main(String[] args) {
 
+        int i = 1;
         String name2 = "Gustavo";
         boolean check = true;
 
-        // Call a Function que no return nada
-        printMyName(name2 + check);
+        printMyName(name2 + " " + check + " " + i);
+        System.out.println(printAlgo(check, name2));
 
+        // If / Else  **************************************************++*
         int number1 = 10;
         int number2 = 20;
         int number3 = 30;
@@ -21,21 +23,30 @@ public class HelloWorld {
             System.out.println("Nada");
         }
 
-        int count = 0;
-        while (count < 10) {
+
+        // Bucle WHILE ****************************************************
+        int count = 10;
+        while (count >= 0) {
             System.out.println("Contador en: " + count);
-            count++;
+            if (count == 16) {
+                System.out.println("Ha Terminado antes de tiempo!!");
+                break;
+            }else if (count == 0) {
+                System.out.println("Ha Terminado!!");
+            }
+            count--;
         }
+
     }
 
-        // FUNCTION QUE NO RETURN NADA (VOID)
+        // FUNCTION QUE NO RETURN NADA (VOID) ****************************
         public static void printMyName (String nam){
             System.out.println(nam);
         }
 
-        // FUNCTION QUE RETURN
-        public static String printName2 (String algo){
-            return algo + " concatenate.";
+        // FUNCTION QUE RETURN ******************************************+
+        public static String printAlgo (boolean algo, String algo2){
+            return algo + " concatenate " + algo2;
         }
 
 
