@@ -11,7 +11,7 @@ public class CocheServiceSportImpl implements CocheService{
     }
 
     @Override
-    public void destruirCoche(Auto auto1) {
+    public void destruirCoche(Auto auto) {
         System.out.println("Destruir Sport");
     }
 }

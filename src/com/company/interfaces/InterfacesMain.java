@@ -10,5 +10,8 @@ public class InterfacesMain {
 
         Auto auto1 = classic.crearAutoDemo();
         Auto auto2 = sport.crearAutoDemo();
+
+        sport.destruirCoche(auto1);
+        classic.destruirCoche(auto2);
     }
 }
