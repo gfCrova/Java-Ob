@@ -10,11 +10,7 @@ public class Auto {
     Double largo;
     int velocidad;
 
-    // CONSTRUCTORES
-
-    //public Auto() {}
-
-    // CONSTRUCTOR
+    // CONSTRUCTORS
 
     public Auto() {
     }
