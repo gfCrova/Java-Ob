@@ -1,5 +1,5 @@
 package com.company.interfaces;
-import com.company.Auto;
+import com.company.Clases.Auto;
 
 public interface CocheService {
 

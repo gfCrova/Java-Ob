@@ -1,6 +1,6 @@
 package com.company.interfaces;
 
-import com.company.Auto;
+import com.company.Clases.Auto;
 
 public class InterfacesMain {
     public static void main(String[] args) {

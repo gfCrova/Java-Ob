@@ -1,7 +1,7 @@
 package com.company.interfaces;
 
-import com.company.Auto;
-import com.company.AutoElectrico;
+import com.company.Clases.Auto;
+import com.company.Clases.AutoElectrico;
 
 public class CocheServiceSportImpl implements CocheService{
     @Override
