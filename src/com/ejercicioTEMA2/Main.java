@@ -1,15 +1,20 @@
 package com.ejercicioTEMA2;
+import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
-        // Option 1
 
-        System.out.println(precioConIva(25000));
-    }
+        Scanner scan = new Scanner(System.in);
 
-    static String precioConIva(int cantidad) {
-        int iva = 200;
-        return "El total más IVA es de: $" + (cantidad + iva);
+        System.out.println("Introduce un número: ");
+
+        int numero = scan.nextInt();
+
+        double iva = numero * 0.21;
+
+        double suma = numero + iva;
+
+        System.out.println("El resultado con IVA es: " + suma);
+
     }
 }
