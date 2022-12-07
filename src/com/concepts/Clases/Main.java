@@ -1,7 +1,4 @@
-package com.company.Clases;
-
-import com.company.Clases.Auto;
-import com.company.Clases.AutoElectrico;
+package com.concepts.Clases;
 
 public class Main {
 

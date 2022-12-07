@@ -1,6 +1,6 @@
-package com.company.interfaces;
+package com.concepts.interfaces;
 
-import com.company.Clases.Auto;
+import com.concepts.Clases.Auto;
 
 public class InterfacesMain {
     public static void main(String[] args) {
