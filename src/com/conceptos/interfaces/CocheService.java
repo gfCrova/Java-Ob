@@ -1,5 +1,5 @@
-package com.concepts.interfaces;
-import com.concepts.Clases.Auto;
+package com.conceptos.interfaces;
+import com.conceptos.Clases.Auto;
 
 public interface CocheService {
 

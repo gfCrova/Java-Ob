@@ -1,4 +1,4 @@
-package com.concepts.Clases;
+package com.conceptos.Clases;
 
 public class AutoElectrico extends Auto {
     String motorElectrico;
