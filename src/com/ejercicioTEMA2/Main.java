@@ -15,6 +15,5 @@ public class Main {
         double suma = numero + iva;
 
         System.out.println("El resultado con IVA es: " + suma);
-
     }
 }
