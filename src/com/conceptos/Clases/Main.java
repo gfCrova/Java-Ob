@@ -8,7 +8,7 @@ public class Main {
         auto1.acelerar(80);
         System.out.println(auto1);
 
-        // INSTANCIA sin parametros
+        // INSTANCIA CONSTRUCTOR VACÍO
         AutoElectrico autoElectrico1 = new AutoElectrico();
         autoElectrico1.motorElectrico = "Motor 1.1";
         autoElectrico1.modelo = "Civic";
@@ -21,7 +21,7 @@ public class Main {
         System.out.println(autoElectrico1);
 
 
-        // INSTANCIA DE SUPER
+        // INSTANCIA CONSTRUCTOR CON PARÁMETROS
         AutoElectrico autoElectrico2 = new AutoElectrico("Verde", "Civic", "Honda", 1650.80, 5.2, 50, "Motor 2.3");
         System.out.println(autoElectrico2);
 

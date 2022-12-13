@@ -10,7 +10,7 @@ public class Auto {
     Double largo;
     int velocidad;
 
-    // CONSTRUCTORS
+    // CONSTRUCTORES
 
     public Auto() {
     }
@@ -22,7 +22,7 @@ public class Auto {
         this.largo = largo;
     }
 
-    //MÉTODOS DE CLASE
+    // MÉTODOS (Comportamiento)
     public void acelerar(int cantidad) {
         if (cantidad > 0 && cantidad <= 500) {
             this.velocidad += cantidad;
@@ -40,6 +40,4 @@ public class Auto {
                 ", velocidad=" + velocidad +
                 '}';
     }
-
-
 }

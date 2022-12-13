@@ -1,4 +1,4 @@
-package com.conceptos.interfaces;
+package com.conceptos.Clases.interfaces;
 
 import com.conceptos.Clases.Auto;
 import com.conceptos.Clases.AutoElectrico;
