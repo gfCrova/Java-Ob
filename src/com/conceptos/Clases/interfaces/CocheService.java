@@ -1,9 +1,9 @@
 package com.conceptos.Clases.interfaces;
-import com.conceptos.Clases.Auto;
+import com.conceptos.Clases.Vehiculo;
 
 public interface CocheService {
 
-    public Auto crearAutoDemo();
+    public Vehiculo crearAutoDemo();
 
-    public void destruirCoche(Auto auto);
+    public void destruirCoche(Vehiculo auto);
 }

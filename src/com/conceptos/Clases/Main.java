@@ -10,27 +10,27 @@ public class Main {
         Motor motorGTIelectrico = new Motor("GTI electric", 0, 120);
 
         // INSTANCIA CONSTRUCTOR CON PARÁMETROS
-        Vehiculo auto = new Vehiculo("red", "Honda", "civic", 1460.60, 5.0, 200, motorGTI);
-        auto.acelerar(80);
+        Vehiculo autoHonda = new Vehiculo("red", "Civic", "Honda", 1460.60, 5.0, 200, motorGTI);
+        autoHonda.acelerar(280);
 
         // INSTANCIA CONSTRUCTOR VACÍO (SUPER)
-        AutoElectrico autoElectrico1 = new AutoElectrico();
-        autoElectrico1.setModelo("Civic");
-        autoElectrico1.setColor("Azul");
-        autoElectrico1.setPeso(1600.00);
-        autoElectrico1.setLargo(5.0);
-        autoElectrico1.setFabricante("Honda");
-        autoElectrico1.setVelocidad(90);
-        autoElectrico1.setMotor(motorGTIelectrico);
-        autoElectrico1.setMotorElectrico("Motor 1.1");
-        autoElectrico1.acelerar(50);
+        AutoElectrico autoElectricoChevrolet = new AutoElectrico();
+        autoElectricoChevrolet.setModelo("Corsa");
+        autoElectricoChevrolet.setColor("Azul");
+        autoElectricoChevrolet.setPeso(1600.00);
+        autoElectricoChevrolet.setLargo(5.0);
+        autoElectricoChevrolet.setFabricante("Chevrolet");
+        autoElectricoChevrolet.setVelocidad(90);
+        autoElectricoChevrolet.setMotor(motorGTIelectrico);
+        autoElectricoChevrolet.setMotorElectrico("Motor 1.1");
+        autoElectricoChevrolet.acelerar(150);
 
         // INSTANCIA CONSTRUCTOR CON PARÁMETROS (SUPER)
-        AutoElectrico autoElectrico2 = new AutoElectrico("Verde", "Civic", "Honda", 1650.80, 5.2, 50, motorGTIelectrico,"Motor 2.3");
-        autoElectrico2.acelerar(200);
+        AutoElectrico autoElectricoFord = new AutoElectrico("Verde", "Focus", "Ford", 1650.80, 5.2, 50, motorGTIelectrico,"Motor 2.3");
+        autoElectricoFord.acelerar(200);
 
-        System.out.println(auto);
-        System.out.println(autoElectrico1);
-        System.out.println(autoElectrico2);
+        System.out.println(autoHonda);
+        System.out.println(autoElectricoChevrolet);
+        System.out.println(autoElectricoFord);
     }
 }
