@@ -1,8 +1,8 @@
-package com.PruebaCodewars;
+package com.PruebaCodewars.invertirString;
 
+import com.PruebaCodewars.invertirString.Kata;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import org.junit.runners.JUnit4;
 
 public class SolutionTest {
     @Test
