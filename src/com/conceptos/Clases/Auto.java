@@ -9,17 +9,21 @@ public class Auto {
     Double peso;
     Double largo;
     int velocidad;
+    Motor motor;
 
     // CONSTRUCTORES
 
     public Auto() {
     }
-    public Auto(String color, String modelo, String fabricante, Double peso, Double largo) {
+
+    public Auto(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor) {
         this.color = color;
         this.modelo = modelo;
         this.fabricante = fabricante;
         this.peso = peso;
         this.largo = largo;
+        this.velocidad = velocidad;
+        this.motor = motor;
     }
 
     // MÉTODOS (Comportamiento)
@@ -32,12 +36,15 @@ public class Auto {
     @Override
     public String toString() {
         return "Auto{" +
-                "color='" + color + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", fabricante='" + fabricante + '\'' +
-                ", peso=" + peso +
-                ", largo=" + largo +
-                ", velocidad=" + velocidad +
+                "Color = '" + color + '\'' +
+                ", Modelo = '" + modelo + '\'' +
+                ", Fabricante = '" + fabricante + '\'' +
+                ", Peso = " + peso +
+                ", Largo = " + largo +
+                ", Velocidad = " + velocidad +
+                ", Motor = " + motor +
                 '}';
     }
+
+
 }

@@ -7,22 +7,24 @@ public class AutoElectrico extends Auto {
     }
 
     // SUPER CONSTRUCTOR
-    public AutoElectrico(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, String motorElectrico){
-        super(color, modelo, fabricante, largo, (double) velocidad);
+
+
+    public AutoElectrico(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor, String motorElectrico) {
+        super(color, modelo, fabricante, peso, largo, velocidad, motor);
         this.motorElectrico = motorElectrico;
     }
 
-    // SOBREESCRITURA (override)
     @Override
     public String toString() {
         return "AutoElectrico{" +
-                "color='" + color + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", fabricante='" + fabricante + '\'' +
-                ", peso=" + peso +
-                ", largo=" + largo +
-                ", velocidad=" + velocidad +
-                ", motorElectrico='" + motorElectrico + '\'' +
+                "Motor Electrico = '" + motorElectrico + '\'' +
+                ", Color = '" + color + '\'' +
+                ", Modelo = '" + modelo + '\'' +
+                ", Fabricante = '" + fabricante + '\'' +
+                ", Peso = " + peso +
+                ", Largo = " + largo +
+                ", Velocidad = " + velocidad +
+                ", Motor = " + motor +
                 '}';
     }
 
