@@ -2,9 +2,9 @@ package com.conceptos.Clases;
 
 public class Motor {
 
-    String modelo;
-    int cilindros;
-    int caballos;
+    private final String modelo;
+    private final int cilindros;
+    private final int caballos;
 
     public Motor(String modelo, int cilindros, int caballos) {
         this.modelo = modelo;
@@ -14,7 +14,7 @@ public class Motor {
 
     @Override
     public String toString() {
-        return "Motor {" +
+        return "{" +
                 "Modelo = '" + modelo + '\'' +
                 ", Cilindros = " + cilindros +
                 ", Caballos = " + caballos +
