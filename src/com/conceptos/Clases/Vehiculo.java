@@ -16,6 +16,15 @@ public class Vehiculo {
     public Vehiculo() {
     }
 
+    public Vehiculo(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad) {
+        this.setColor(color);
+        this.setModelo(modelo);
+        this.setFabricante(fabricante);
+        this.setPeso(peso);
+        this.setLargo(largo);
+        this.setVelocidad(velocidad);
+    }
+
     public Vehiculo(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor) {
         this.setColor(color);
         this.setModelo(modelo);
