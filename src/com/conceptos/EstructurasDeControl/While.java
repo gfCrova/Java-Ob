@@ -1,15 +1,8 @@
 package com.conceptos.EstructurasDeControl;
 
-public class HelloWorld {
+public class While {
 
     public static void main(String[] args) {
-
-        int i = 1;
-        String name2 = "Gustavo";
-        boolean check = true;
-
-        printMyName(name2 + " " + check + " " + i);
-        System.out.println(printAlgo(check, name2));
 
         // If / Else  **************************************************++*
         int number1 = 10;
@@ -22,7 +15,6 @@ public class HelloWorld {
         } else {
             System.out.println("Nada");
         }
-
 
         // Bucle WHILE ****************************************************
         int count = 10;
@@ -38,16 +30,4 @@ public class HelloWorld {
         }
 
     }
-
-        // FUNCTION QUE NO RETURN NADA (VOID) ****************************
-        public static void printMyName (String nam){
-            System.out.println(nam);
-        }
-
-        // FUNCTION QUE RETURN ******************************************+
-        public static String printAlgo (boolean algo, String algo2){
-            return algo + " concatenate " + algo2;
-        }
-
-
 }

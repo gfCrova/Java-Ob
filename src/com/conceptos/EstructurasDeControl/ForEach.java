@@ -12,7 +12,6 @@ public class ForEach {
         }
 
 
-
         String[] nombres = {"Julia", "José", "María", "Nahuel"};
 
         for (String nombre : nombres) {
