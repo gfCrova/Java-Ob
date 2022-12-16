@@ -1,6 +1,7 @@
 package com.conceptos.Clases;
 
-public class Vehiculo {
+// Class ABSTRACT No se puede INSTANCIAR, solo las herencias
+public abstract class Vehiculo {
 
     // ATRIBUTOS DE LA CLASE
     private String color;
@@ -109,6 +110,6 @@ public class Vehiculo {
                 ", Largo = " + getLargo() +
                 ", Velocidad = " + getVelocidad() +
                 ", Motor = " + getMotor() +
-                '}';
+                " } ";
     }
 }
