@@ -29,4 +29,12 @@ public class AutoElectrico extends Vehiculo {
         int cantidadAjustada = cantidad * 2;
         super.acelerar(cantidadAjustada);
     }
+
+    @Override
+    public String toString() {
+        return "AutoElectrico:" +
+                super.toString() + '\'' +
+                ", motorElectrico = '" + getMotorElectrico() + '\'' +
+                '}';
+    }
 }

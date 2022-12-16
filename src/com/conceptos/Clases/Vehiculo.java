@@ -101,10 +101,10 @@ public class Vehiculo {
 
     @Override
     public String toString() {
-        return this.modelo + " { " +
-                "Color = '" + getColor() + '\'' +
+        return " { " +
+                "Fabricante = '" + getFabricante() + '\'' +
                 ", Modelo = '" + getModelo() + '\'' +
-                ", Fabricante = '" + getFabricante() + '\'' +
+                ", Color = '" + getColor() + '\'' +
                 ", Peso = " + getPeso() +
                 ", Largo = " + getLargo() +
                 ", Velocidad = " + getVelocidad() +
