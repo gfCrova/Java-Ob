@@ -1,7 +1,7 @@
-package com.conceptos.Clases.interfaces;
+package com.conceptos.OOP.interfaces;
 
-import com.conceptos.Clases.Vehiculo;
-import com.conceptos.Clases.herencia.Auto;
+import com.conceptos.OOP.Clases.Vehiculo;
+import com.conceptos.OOP.Clases.herencia.Auto;
 
 public class CocheServiceClassicImpl implements CocheService{
     @Override

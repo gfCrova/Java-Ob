@@ -1,4 +1,4 @@
-package com.conceptos.Clases;
+package com.conceptos.OOP.Clases;
 
 public class Motor {
 

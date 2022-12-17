@@ -1,7 +1,7 @@
-package com.conceptos.Clases.herencia;
+package com.conceptos.OOP.Clases.herencia;
 
-import com.conceptos.Clases.Vehiculo;
-import com.conceptos.Clases.Motor;
+import com.conceptos.OOP.Clases.Vehiculo;
+import com.conceptos.OOP.Clases.Motor;
 
 public class Auto extends Vehiculo {
 

@@ -1,6 +1,6 @@
-package com.conceptos.Clases.interfaces;
+package com.conceptos.OOP.interfaces;
 
-import com.conceptos.Clases.Vehiculo;
+import com.conceptos.OOP.Clases.Vehiculo;
 
 public class InterfacesMain {
     public static void main(String[] args) {

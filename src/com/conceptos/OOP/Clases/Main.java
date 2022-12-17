@@ -1,7 +1,7 @@
-package com.conceptos.Clases;
+package com.conceptos.OOP.Clases;
 
-import com.conceptos.Clases.herencia.Auto;
-import com.conceptos.Clases.herencia.Motocicleta;
+import com.conceptos.OOP.Clases.herencia.Auto;
+import com.conceptos.OOP.Clases.herencia.Motocicleta;
 
 public class Main {
 

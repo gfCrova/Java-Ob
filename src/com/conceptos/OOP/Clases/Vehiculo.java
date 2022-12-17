@@ -1,4 +1,4 @@
-package com.conceptos.Clases;
+package com.conceptos.OOP.Clases;
 
 // Class ABSTRACT No se puede INSTANCIAR, solo las herencias
 public abstract class Vehiculo {
