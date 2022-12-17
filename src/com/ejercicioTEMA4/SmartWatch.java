@@ -7,7 +7,6 @@ public class SmartWatch extends SmartDevice{
     private boolean resistenciaAlAgua;
 
 
-
     public SmartWatch() {
     }
 
@@ -47,9 +46,9 @@ public class SmartWatch extends SmartDevice{
     public String toString() {
         return  "SmartWatch: { " +
                 super.toString() + '\n' +
-                "Material de Malla = '" + materialMalla + '\'' +  '\n' +
-                "Tipo de Malla = '" + tipoMalla + '\'' +  '\n' +
-                "Resistencia al Agua = " + resistenciaAlAgua +  '\n' +
+                "Material de Malla = '" + getMaterialMalla() + '\'' +  '\n' +
+                "Tipo de Malla = '" + getTipoMalla() + '\'' +  '\n' +
+                "Resistencia al Agua = " + isResistenciaAlAgua() +  '\n' +
                 '}';
     }
 }
