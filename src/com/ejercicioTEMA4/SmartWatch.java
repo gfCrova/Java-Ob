@@ -44,7 +44,7 @@ public class SmartWatch extends SmartDevice{
 
     @Override
     public String toString() {
-        return  "SmartWatch: { " +
+        return  "SmartWatch: { " + '\n' +
                 super.toString() + '\n' +
                 "Material de Malla = '" + getMaterialMalla() + '\'' +  '\n' +
                 "Tipo de Malla = '" + getTipoMalla() + '\'' +  '\n' +
