@@ -1,4 +1,4 @@
-<p><li>Ejercicios Java Básico OB</li></p>
+<p><li>Ejercicios curso Java Básico OB</li></p>
 
 <div align="center">
 <!--<h1><em> Java - OpenBootcamp</em></h1>-->
