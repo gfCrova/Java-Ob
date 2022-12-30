@@ -1,7 +1,7 @@
 package com.conceptos.OOP.Clases;
 
 // Class ABSTRACT No se puede INSTANCIAR, solo las herencias
-public abstract class Vehiculo {
+public class Vehiculo {
 
     // ATRIBUTOS DE LA CLASE
     private String color;
