@@ -1,8 +1,6 @@
 package com.ejercicioTEMA6;
 
-import java.util.Vector;
-
-public class Arrays {
+public class manipularArrays {
 
     public static void main(String[] args) {
 
@@ -26,28 +24,6 @@ public class Arrays {
                 System.out.println("Posición: [" + i + "][" + j + "] y contiene el valor " + arrayBiEnteros[i][j]);
             }
             System.out.println("\n");
-        }
-
-        // Recorrer un Vertor
-
-        Vector<Integer> mundialesSigloXXI = new Vector<>();
-
-        mundialesSigloXXI.add(2002);
-        mundialesSigloXXI.add(2006);
-        mundialesSigloXXI.add(2010);
-        mundialesSigloXXI.add(2014);
-        mundialesSigloXXI.add(2018);
-        mundialesSigloXXI.add(2022);
-
-        System.out.println(mundialesSigloXXI.size() + ", " + mundialesSigloXXI.capacity());
-
-        mundialesSigloXXI.remove(1);
-        mundialesSigloXXI.remove(2);
-
-        System.out.println(mundialesSigloXXI.size() + ", " + mundialesSigloXXI.capacity());
-
-        for (int i = 0; i < mundialesSigloXXI.size(); i++) {
-            System.out.println("Valor en la posición " + i + " del vector: " + mundialesSigloXXI.get(i));
         }
     }
 
