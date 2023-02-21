@@ -2,7 +2,7 @@ package com.ejercicioTEMA6;
 
 import java.lang.ArithmeticException;
 
-public class Exception {
+public class ExceptionDividePorCero {
 
     public static void main(String[] args) {
 
