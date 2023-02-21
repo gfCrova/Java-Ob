@@ -1,6 +1,6 @@
 package com.ejercicioTEMA6;
 
-public class manipularArrays {
+public class Arrays {
 
     public static void main(String[] args) {
 
