@@ -19,7 +19,7 @@ public class ArrayList_LinkedList {
 
         listado.remove(2);
 
-        for (String elemento:listado) {
+        for (String elemento : listado) {
             System.out.println(elemento);
         }
 
@@ -29,7 +29,7 @@ public class ArrayList_LinkedList {
 
         LinkedList<String> listadoCopiado = new LinkedList<String>(listado);
 
-        for (String elemento:listadoCopiado) {
+        for (String elemento : listadoCopiado) {
             System.out.println(elemento);
         }
 
@@ -60,9 +60,9 @@ public class ArrayList_LinkedList {
             }
         }
 
-        for (Integer num:llenarElArray) {
+        for (Integer num : llenarElArray) {
             System.out.println(num);
         }
-    }
 
+    }
 }
