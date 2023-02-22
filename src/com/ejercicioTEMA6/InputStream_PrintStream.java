@@ -1,6 +1,10 @@
 package com.ejercicioTEMA6;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public class InputStream_PrintStream {
 
