@@ -17,9 +17,11 @@ public class InputStream_PrintStream {
         try {
             InputStream in = new FileInputStream(fileIn);
             byte[] datos = in.readAllBytes();
+            in.close();
 
             PrintStream out = new PrintStream(fileOut);
             out.write(datos);
+            out.close();
 
         } catch (FileNotFoundException e) {
             System.out.println("Error: " + e.getMessage());
