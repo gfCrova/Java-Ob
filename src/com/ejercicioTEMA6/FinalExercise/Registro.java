@@ -1,9 +1,7 @@
 package com.ejercicioTEMA6.FinalExercise;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Registro {
 
@@ -17,21 +15,16 @@ public class Registro {
         System.out.print("Introduce un Apellido: ");
         String apellido = scanner.next();
 
-        ArrayList<String> usuarios = new ArrayList<String>();
-        usuarios.add(nombre + ", " + apellido);
+        HashMap<String, String> mapa = new HashMap<>();
+        mapa.put("nombre", nombre);
+        mapa.put("apellido", apellido);
 
-        LinkedList<String> listadoCopiado = new LinkedList<String>(usuarios);
-
-        System.out.println(listadoCopiado);
+        System.out.println(mapa);
 
         try {
-            File file = new File("registro.txt");
-            BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-
-            for (String users : listadoCopiado) {
-                bw.write(users);
-            }
-            bw.close();
+            PrintStream newfile = new PrintStream("registro.txt");
+            newfile.write(String.valueOf(mapa).getBytes());
+            newfile.close();
 
         } catch (FileNotFoundException e) {
             throw new FileNotFoundException(e.getMessage());
