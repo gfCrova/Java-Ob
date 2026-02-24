@@ -1,4 +1,4 @@
-package com.ejercicioTEMA2;
+package com;
 import java.util.Scanner;
 
 public class getIVA {
