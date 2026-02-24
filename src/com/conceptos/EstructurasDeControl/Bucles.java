@@ -58,6 +58,7 @@ public class Bucles {
         No requiere una variable de índice, ya que itera directamente sobre los elementos.
         */
         String[] nombres = {"Julia", "José", "María", "Nahuel"};
+
         for (String nombre : nombres) {
             System.out.println("Nombre: " + nombre);
         }
