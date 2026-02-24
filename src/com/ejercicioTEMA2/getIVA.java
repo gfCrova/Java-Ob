@@ -1,7 +1,7 @@
 package com.ejercicioTEMA2;
 import java.util.Scanner;
 
-public class Main {
+public class getIVA {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -12,8 +12,8 @@ public class Main {
 
         double iva = numero * 0.21;
 
-        double suma = numero + iva;
+        double sumaTotal = numero + iva;
 
-        System.out.println("El resultado con IVA es: " + suma);
+        System.out.println("El resultado con IVA es: " + sumaTotal);
     }
 }
