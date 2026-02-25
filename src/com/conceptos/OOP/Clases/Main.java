@@ -19,13 +19,15 @@ public class Main {
         Chevrolet.setFabricante("Chevrolet");
         Chevrolet.setVelocidad(90);
         Chevrolet.setMotor(motorGTI);
-        Chevrolet.acelerar(150);
+        Chevrolet.acelerar(60);
+        Chevrolet.desacelerar(50);
 
         // INSTANCIA CONSTRUCTOR CON PARÁMETROS (SUPER)
         Auto Ford = new Auto("Verde", "Focus", "Ford", 1650.80, 5.2, 50, motorGTI,"Motor 2.3");
-        Ford.acelerar(200);
+        Ford.acelerar(80);
 
         Motocicleta motoSuzuki = new Motocicleta ("Azul", "AX", "Suzuki", 400.00, 1.5, 80, "Calle", 100, 4, 2, suzuki1123);
+        motoSuzuki.desacelerar(40);
 
         System.out.println(Chevrolet);
         System.out.println(Ford);

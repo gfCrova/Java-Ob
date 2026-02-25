@@ -53,12 +53,12 @@ public class Motocicleta extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Moto:" +
-                super.toString() +
-                ", tipo = '" + getTipo() + '\'' +
-                ", cc = " + getCc() +
-                ", cajaDeCambios = " + getCajaDeCambios() +
-                ", tiempos = " + getTiempos() +
+        String parent = super.toString();
+        return  "Moto: " + parent.substring(0, parent.length() - 1) +
+                "\tTipo = '" + getTipo() + '\n' +
+                "\tCC = " + getCc() + '\n' +
+                "\tCaja De Cambios = " + getCajaDeCambios() + '\n' +
+                "\tTiempos = " + getTiempos() + '\n' +
                 '}';
     }
 }

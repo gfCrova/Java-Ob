@@ -3,9 +3,9 @@ package com.conceptos.OOP.interfaces;
 import com.conceptos.OOP.Clases.Vehiculo;
 import com.conceptos.OOP.Clases.herencia.Auto;
 
-public class CocheServiceSportImpl implements CocheService{
+public class CocheServiceSportImpl implements ICoche {
     @Override
-    public Vehiculo crearAutoDemo(){
+    public Vehiculo crearCocheDemo(){
         System.out.println("Sport Service");
         return new Auto();
     }

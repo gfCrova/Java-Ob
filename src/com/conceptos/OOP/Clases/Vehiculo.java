@@ -4,6 +4,7 @@ package com.conceptos.OOP.Clases;
 public class Vehiculo {
 
     // ATRIBUTOS DE LA CLASE
+    // Atributos privados para encapsulamiento (controlar el acceso a los datos)
     private String color;
     private String modelo;
     private String fabricante;
@@ -13,10 +14,11 @@ public class Vehiculo {
     private Motor motor;
 
     // CONSTRUCTORES
-
+    // Constructor por defecto (sin parámetros)
     public Vehiculo() {
     }
 
+    // Constructor con parámetros (sobrecarga de constructores)
     public Vehiculo(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad) {
         this.setColor(color);
         this.setModelo(modelo);
@@ -26,6 +28,7 @@ public class Vehiculo {
         this.setVelocidad(velocidad);
     }
 
+    // Constructor con parámetros (sobrecarga de constructores) - CON MOTOR
     public Vehiculo(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor) {
         this.setColor(color);
         this.setModelo(modelo);
@@ -36,14 +39,31 @@ public class Vehiculo {
         this.setMotor(motor);
     }
 
-    // MÉTODOS (Comportamiento)
+    /* MÉTODOS (Comportamiento)
+    Recibe una cantidad de aceleración y la suma a la velocidad actual del vehículo.
+    Si la cantidad es negativa o mayor a 500, no se realiza ningún cambio en la velocidad. */
+
     public void acelerar(int cantidad) {
         if (cantidad > 0 && cantidad <= 500) {
             this.setVelocidad(this.getVelocidad() + cantidad);
         }
     }
 
+    // Este metodo desacelera el vehículo restando la cantidad a la velocidad actual, pero no permite que la velocidad sea negativa.
+    public void desacelerar(int cantidad) {
+        if (cantidad > 0 && cantidad <= 500) {
+            int nuevaVelocidad = this.getVelocidad() - cantidad;
+            if (nuevaVelocidad < 0) {
+                this.setVelocidad(0);
+            } else {
+                this.setVelocidad(nuevaVelocidad);
+            }
+        }
+    }
+
     // SETTERS  -  GETTERS
+    // Encapsulamiento: Controlar el acceso a los atributos a través de métodos públicos (getters y setters)
+
     public String getColor() {
         return color;
     }
@@ -100,16 +120,17 @@ public class Vehiculo {
         this.motor = motor;
     }
 
+    // toString para mostrar la información del vehículo
     @Override
     public String toString() {
-        return " { " +
-                "Fabricante = '" + getFabricante() + '\'' +
-                ", Modelo = '" + getModelo() + '\'' +
-                ", Color = '" + getColor() + '\'' +
-                ", Peso = " + getPeso() +
-                ", Largo = " + getLargo() +
-                ", Velocidad = " + getVelocidad() +
-                ", Motor = " + getMotor() +
-                " } ";
+        return "{ \n" +
+                "\tFabricante = '" + getFabricante() + '\n' +
+                "\tModelo = '" + getModelo() + '\n' +
+                "\tColor = '" + getColor() + '\n' +
+                "\tPeso = " + getPeso() + '\n' +
+                "\tLargo = " + getLargo() + '\n' +
+                "\tVelocidad = " + getVelocidad() + '\n' +
+                "\tMotor = " + getMotor() + '\n' +
+                "}";
     }
 }

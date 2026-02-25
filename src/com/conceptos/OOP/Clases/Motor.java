@@ -41,10 +41,9 @@ public class Motor {
 
     @Override
     public String toString() {
-        return "{" +
-                "Modelo = '" + getModelo() + '\'' +
-                ", Cilindros = " + getCilindros() +
-                ", Caballos = " + getCaballos() +
-                '}';
+        return "{ \n\t\tModelo = '" + getModelo() + '\n' +
+                "\t\tCilindros = " + getCilindros() + '\n' +
+                "\t\tCaballos = " + getCaballos() + '\n' +
+                "\t}";
     }
 }
