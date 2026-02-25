@@ -10,11 +10,11 @@ public class Auto extends Vehiculo {
 
     // SUPER CONSTRUCTOR
     // El constructor de la clase padre se llama utilizando la palabra clave "super" seguida de los parámetros necesarios.
-    public Auto(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor, String motorElectrico) {
+    public Auto(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor) {
         super(color, modelo, fabricante, peso, largo, velocidad, motor);
     }
 
-    // SOBREESCRITURA DE MÉTODO
+    // SOBREESCRITURA DE METODO
     /*@Override
     public void acelerar(int cantidad){
         int cantidadAjustada = cantidad * 2;
