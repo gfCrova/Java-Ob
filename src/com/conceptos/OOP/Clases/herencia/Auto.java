@@ -10,7 +10,7 @@ public class Auto extends Vehiculo {
 
     // SUPER CONSTRUCTOR
     // El constructor de la clase padre se llama utilizando la palabra clave "super" seguida de los parámetros necesarios.
-    public Auto(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor) {
+    public Auto(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor, String electricMotor) {
         super(color, modelo, fabricante, peso, largo, velocidad, motor);
     }
 

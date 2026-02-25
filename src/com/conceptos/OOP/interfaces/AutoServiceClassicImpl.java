@@ -3,15 +3,15 @@ package com.conceptos.OOP.interfaces;
 import com.conceptos.OOP.Clases.Vehiculo;
 import com.conceptos.OOP.Clases.herencia.Auto;
 
-public class CocheServiceClassicImpl implements ICoche {
+public class AutoServiceClassicImpl implements IAuto {
     @Override
-    public Vehiculo crearCocheDemo() {
+    public Vehiculo crearAutoDemo() {
         System.out.println("Classic Service");
         return new Auto();
     }
 
     @Override
-    public void destruirCoche(Vehiculo auto) {
+    public void destruirAuto(Vehiculo auto) {
         System.out.println("Destruir Classic");
     }
 }
