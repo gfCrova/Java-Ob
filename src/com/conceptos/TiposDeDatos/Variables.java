@@ -1,5 +1,7 @@
 package com.conceptos.TiposDeDatos;
 
+import java.math.BigDecimal;
+
 public class Variables {
 
     public static void main(String[] args) {
@@ -24,8 +26,6 @@ public class Variables {
         // String
         char var9 = 'A';
         String var10 = "Hola Mundo";
-        System.out.println("\nTEXTO:\nTipo char: " + var9 + "\nTipo string: " + var10 );
-
+        System.out.println("\nTEXTO:\nTipo char: " + var9 + "\nTipo string: " + var10);
     }
-
 }

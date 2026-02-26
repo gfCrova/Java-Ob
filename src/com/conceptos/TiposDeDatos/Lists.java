@@ -19,14 +19,14 @@ public class Lists {
         System.out.println(lista);
 
         // Metodos de ArrayList
-            // size()
+        // size()
         System.out.println("El tamaño de la lista es: " + lista.size()); // Devuelve el número de elementos en la lista
-            // get()
+        // get()
         System.out.println("El elemento en la posición 1 es: " + lista.get(1)); // Devuelve el elemento en la posición especificada
-            // remove()
+        // remove()
         lista.remove(0); // Elimina el elemento en la posición especificada (en este caso, el elemento en la posición 0, que es "Elemento 1")
         System.out.println("La lista después de eliminar el elemento en la posición 0 es: " + lista);
-            // clear()
+        // clear()
         lista.clear(); // Elimina todos los elementos de la lista, dejándola vacía
         System.out.println("La lista después de limpiar todos los elementos es: " + lista);
 
