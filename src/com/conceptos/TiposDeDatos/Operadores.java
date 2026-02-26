@@ -1,4 +1,4 @@
-package com.conceptos.Variables;
+package com.conceptos.TiposDeDatos;
 
 public class Operadores {
 

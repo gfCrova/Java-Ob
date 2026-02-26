@@ -1,6 +1,6 @@
-package com.conceptos.Variables;
+package com.conceptos.TiposDeDatos;
 
-public class TiposDeDatos {
+public class Variables {
 
     public static void main(String[] args) {
 
