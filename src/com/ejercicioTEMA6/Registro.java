@@ -1,10 +1,23 @@
-package com.ejercicioTEMA6.FinalExercise;
+package com.ejercicioTEMA6;
 
 import java.io.*;
 import java.util.*;
 
 public class Registro {
 
+    public static void main(String[] args) throws FileNotFoundException {
+
+        try {
+            users();
+        } catch (FileNotFoundException e) {
+            System.out.println("Error");
+        } catch ( IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /* Metodo para solicitar al usuario que introduzca su nombre y apellido,
+    Almacenarlos en un 'HashMap' y escribirlos en un archivo de texto. */
     public static void users() throws FileNotFoundException, IOException {
 
         Scanner scanner = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package com.ejercicioTEMA4;
+package com.ejercicioObjects;
 
 public abstract class SmartDevice {
 
