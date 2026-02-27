@@ -27,5 +27,10 @@ public class Variables {
         char var9 = 'A';
         String var10 = "Hola Mundo";
         System.out.println("\nTEXTO:\nTipo char: " + var9 + "\nTipo string: " + var10);
+
+        // Como se usa printf        System.out.println("\nUSO DE PRINTF:");
+        System.out.printf("\nEl valor de var1 es: %d", var1);
+        System.out.printf("\nEl valor de var5 es: %.2f", var5);
+        System.out.printf("\nEl valor de var7 es: %b", var7);
     }
 }
