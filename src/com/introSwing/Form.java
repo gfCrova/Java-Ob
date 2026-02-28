@@ -1,8 +1,6 @@
 package com.introSwing;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 // Ejercicio: Crear una aplicación de escritorio que permita al usuario ingresar un precio y un porcentaje de impuesto,
 // y luego calcule y muestre el precio total con impuestos incluidos.
@@ -29,15 +27,12 @@ public class Form {
         taxPanel.add(totalPane);
 
         // Agregar un ActionListener al botón para calcular el precio total con impuestos incluidos cuando se haga clic en él.
-        botonCalcular.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                double p = Double.parseDouble(pricePane.getText());
-                double t = Double.parseDouble(taxPane.getText());
+        botonCalcular.addActionListener(e -> {
+            double p = Double.parseDouble(pricePane.getText());
+            double t = Double.parseDouble(taxPane.getText());
 
-                double result = p + (p / 100 * t);
-                totalPane.setText(Double.toString(result));
-            }
+            double result = p + (p / 100 * t);
+            totalPane.setText(Double.toString(result));
         });
     }
 

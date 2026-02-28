@@ -23,5 +23,4 @@ public class Sobrecarga {
     static void functionOverload(String param1, int param2) {
         System.out.println("Función con dos parámetros: " + param1 + " " + param2);
     }
-
 }

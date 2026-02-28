@@ -1,4 +1,4 @@
-package com.ejercicioTEMA5;
+package com.ejercicioInterfaces;
 
 import com.conceptos.OOP.Clases.Vehiculo;
 

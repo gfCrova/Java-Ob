@@ -1,4 +1,4 @@
-package com.ejercicioTEMA6;
+package com.conceptos;
 
 import java.io.*;
 import java.util.*;
