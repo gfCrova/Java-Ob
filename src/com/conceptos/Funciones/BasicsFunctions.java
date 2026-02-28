@@ -1,6 +1,6 @@
 package com.conceptos.Funciones;
 
-public class FuncionBasica {
+public class BasicsFunctions {
 
     public static void main(String[] args) {
         // Llamada a las funciones
