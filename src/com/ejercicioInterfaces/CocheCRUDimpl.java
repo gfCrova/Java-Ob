@@ -1,6 +1,6 @@
 package com.ejercicioInterfaces;
 
-import com.conceptos.OOP.Clases.Vehiculo;
+import com.concepts.OOP.Clases.Vehiculo;
 
 import java.util.List;
 
