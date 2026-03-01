@@ -1,4 +1,4 @@
-package com.designPatterns.Builder;
+package com.designPatterns.Creatives.Builder;
 /*
 * // El patron Builder se caracteriza por retornar el mismo objeto para poder encadenar las llamadas a los métodos y asi construir el objeto de manera fluida.
 * */

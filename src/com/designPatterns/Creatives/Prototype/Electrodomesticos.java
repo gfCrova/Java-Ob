@@ -1,4 +1,4 @@
-package com.designPatterns.Prototype;
+package com.designPatterns.Creatives.Prototype;
 
 public class Electrodomesticos implements Cloneable {
 

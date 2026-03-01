@@ -1,4 +1,4 @@
-package com.designPatterns.Factory;
+package com.designPatterns.Creatives.Factory;
 /*
      El patrón Factory nos permite la creación de objetos a través de una interfaz común, en este caso, la interfaz Precio.
      En el constructor de PrecioFactory, se recibe un parámetro que determina qué tipo de objeto Precio se va a crear.

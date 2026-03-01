@@ -1,4 +1,4 @@
-package com.designPatterns.Builder;
+package com.designPatterns.Creatives.Builder;
 
 public class Main {
     public static void main(String[] args) {

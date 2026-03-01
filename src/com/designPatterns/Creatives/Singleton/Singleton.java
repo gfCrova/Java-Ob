@@ -1,4 +1,4 @@
-package com.designPatterns.Singleton;
+package com.designPatterns.Creatives.Singleton;
 
 public class Singleton {
 

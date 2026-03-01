@@ -1,4 +1,4 @@
-package com.designPatterns.Factory;
+package com.designPatterns.Creatives.Factory;
 
 public class PrecioEUR implements Precio {
 

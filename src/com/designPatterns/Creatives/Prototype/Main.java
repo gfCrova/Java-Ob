@@ -1,4 +1,4 @@
-package com.designPatterns.Prototype;
+package com.designPatterns.Creatives.Prototype;
 
 public class Main {
     public static void main(String[] args) {
