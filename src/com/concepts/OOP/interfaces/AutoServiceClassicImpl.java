@@ -1,7 +1,7 @@
 package com.concepts.OOP.interfaces;
 
-import com.concepts.OOP.Clases.Vehiculo;
-import com.concepts.OOP.Clases.herencia.Auto;
+import com.concepts.OOP.Models.Vehiculo;
+import com.concepts.OOP.Models.herencia.Auto;
 
 public class AutoServiceClassicImpl implements IAuto {
     @Override
