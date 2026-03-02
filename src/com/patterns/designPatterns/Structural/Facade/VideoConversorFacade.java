@@ -2,6 +2,11 @@ package com.patterns.designPatterns.Structural.Facade;
 
 import java.io.File;
 
+/**
+ * El Facade encapsula la complejidad del subsistema de conversión de video ofreciendo un único punto de entrada simple 'convertVideo()',
+ * reduciendo el acoplamiento entre el cliente y las múltiples clases involucradas en el proceso.
+ * **/
+
 public class VideoConversorFacade {
     public File convertVideo(String fileName, String format){
         System.out.println("VideoConversorFacade: Starting conversion...");

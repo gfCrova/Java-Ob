@@ -20,6 +20,14 @@ public class Condicionales {
         }
     }
 
+    // Usando Operador Ternario
+    static void edadFunction2(int edad) {
+        System.out.println(
+                edad >= 18 ? "Usted ya es mayor de edad." :
+                        (edad > 0 ? "Todavía no es mayor de edad." : "Número no válido")
+        );
+    }
+
     // Switch
 
     static void diaSemana(int dia) {
