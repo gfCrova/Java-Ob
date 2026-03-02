@@ -1,4 +1,8 @@
 package com.patterns.behaviorPatterns.Strategy;
 
-public class IUsers {
+import java.util.ArrayList;
+
+public interface IUsers {
+    void create(String name);
+    ArrayList<String> getAll();
 }
