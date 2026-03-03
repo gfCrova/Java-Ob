@@ -1,16 +1,13 @@
-package com.concepts.OOP.Models.herencia;
+package com.concepts.OOP.Models;
 
-import com.concepts.OOP.Models.Vehiculo;
-import com.concepts.OOP.Models.Motor;
+public class VehiculoAuto extends Vehiculo {
 
-public class Auto extends Vehiculo {
-
-    public Auto(){
+    public VehiculoAuto(){
     }
 
     // SUPER CONSTRUCTOR
     // El constructor de la clase padre se llama utilizando la palabra clave "super" seguida de los parámetros necesarios.
-    public Auto(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor, String electricMotor) {
+    public VehiculoAuto(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, Motor motor, String electricMotor) {
         super(color, modelo, fabricante, peso, largo, velocidad, motor);
     }
 

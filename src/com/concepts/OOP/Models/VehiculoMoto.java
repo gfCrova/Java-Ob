@@ -1,16 +1,13 @@
-package com.concepts.OOP.Models.herencia;
+package com.concepts.OOP.Models;
 
-import com.concepts.OOP.Models.Motor;
-import com.concepts.OOP.Models.Vehiculo;
-
-public class Motocicleta extends Vehiculo {
+public class VehiculoMoto extends Vehiculo {
 
     private String tipo;
     private int cc;
     private int cajaDeCambios;
     private int tiempos;
 
-    public Motocicleta(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, String tipo, int cc, int cajaDeCambios, int tiempos, Motor motor) {
+    public VehiculoMoto(String color, String modelo, String fabricante, Double peso, Double largo, int velocidad, String tipo, int cc, int cajaDeCambios, int tiempos, Motor motor) {
         super(color, modelo, fabricante, peso, largo, velocidad);
         this.setTipo(tipo);
         this.setCajaDeCambios(cajaDeCambios);

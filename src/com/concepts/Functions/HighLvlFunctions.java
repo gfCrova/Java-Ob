@@ -13,27 +13,32 @@ public class HighLvlFunctions {
         int num1 = 8;
         int num2 = 50;
 
+        // Uso de la función lambda 'toMayus' para convertir una cadena a mayúsculas
         System.out.println(toMayus.apply("hola mundo"));
+
+        // Uso de la función lambda 'sumador' para sumar un número consigo mismo
         System.out.println(sumador.apply(num1));
+
+        // Llamada a la función 'applyFunction' pasando 'toMayus' como argumento
         applyFunction(toMayus, "Funciones de alto nivel");
+
+        // Uso de la función 'sumaFuncional' para sumar números en un rango
         System.out.println("La suma total entre los numeros " + num1 + " y " + num2 + " es de: " + sumaFuncional(num1, num2));
 
+        // Creación de una lista de nombres
         ArrayList<String> nombres = new ArrayList<>(Arrays.asList("Hernán", "Gustavo", "Federico"));
         System.out.println(nombres);
 
         // STREAM
-        // stream() convierte la lista en un flujo de datos que permite aplicar operaciones funcionales como map, filter, etc.
-        // map() para transformar cada elemento de la lista usando la función toMayus.
+        // Uso de stream() para convertir la lista en un flujo de datos y map() para transformar cada elemento
         Stream<String> namesMayus = nombres.stream().map(toMayus);
         namesMayus.forEach(x -> System.out.println("Nombre: " + x));
 
-        // filter()
-        // Una vez que se ha consumido el stream, en este caso con el forEach(), no se puede volver a usar, por eso se crea otro stream para el filter.
+        // Uso de filter() para filtrar nombres que comienzan con "G" y map() para transformarlos
         Stream<String> filterNombres = nombres.stream().filter(x -> x.startsWith("G")).map(x -> "Nombre Filtrado: " + x);
         filterNombres.forEach(System.out::println);
 
-        // reduce()
-        // Para reducir los elementos de un stream a un solo valor. En este caso, se filtran los números pares y luego se suman usando Integer::sum como función de reducción.
+        // Uso de reduce() para sumar números pares en un array
         int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int sumaTotal = Arrays.stream(numeros).filter(x -> x % 2 == 0).reduce(0, (x, y) -> {
             System.out.println("Sumando: " + x + " + " + y);
@@ -42,22 +47,31 @@ public class HighLvlFunctions {
         System.out.println("Suma de los números pares: " + sumaTotal);
     }
 
-    // Función lambda: Expresión anónima que implementa una interfaz funcional (con un solo metodo abstracto).
+    // Función lambda: Convierte una cadena a mayúsculas
     public static Function<String, String> toMayus = String::toUpperCase;
 
-    // Función que suma un número consigo mismo usando Integer.sum que es un metodo estático que toma dos enteros y devuelve su suma.
+    // Función lambda: Suma un número consigo mismo
     public static Function<Integer, Integer> sumador = (x) -> Integer.sum(x, x);
 
-    // Funcion como parámetro: Función que recibe otra función como argumento.
+    /**
+     * Aplica una función a un valor dado y muestra el resultado.
+     * @param saluda Función que toma un String y devuelve un String.
+     * @param value Valor al que se aplicará la función.
+     */
     public static void applyFunction(Function<String, String> saluda, String value) {
         String result = saluda.apply(value);
         System.out.println(result);
     }
 
-    // Función funcional para sumar los números del 'num1' al 'num2' utilizando IntStream
+    /**
+     * Suma los números en un rango dado utilizando programación funcional.
+     * @param num1 Inicio del rango (inclusive).
+     * @param num2 Fin del rango (inclusive).
+     * @return La suma de los números en el rango.
+     */
     public static int sumaFuncional(int num1, int num2) {
-        return IntStream.rangeClosed(num1, num2) // rangeClosed() para generar un stream de enteros desde num1 hasta num2 (inclusive).
-                .reduce(0, (a, b) -> a + b); // reduce() para sumar los elementos del stream, comenzando con un valor inicial de 0 y utilizando una función lambda que suma dos números (a y b).
+        return IntStream.rangeClosed(num1, num2) // Genera un stream de enteros desde num1 hasta num2 (inclusive).
+                .reduce(0, (a, b) -> a + b); // Suma los elementos del stream.
     }
 
 }

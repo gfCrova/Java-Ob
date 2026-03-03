@@ -1,8 +1,5 @@
 package com.concepts.OOP.Models;
 
-import com.concepts.OOP.Models.herencia.Auto;
-import com.concepts.OOP.Models.herencia.Motocicleta;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -11,7 +8,7 @@ public class Main {
         Motor suzuki1123 = new Motor("suzuki1123", 1, 10);
 
         // INSTANCIA CONSTRUCTOR VACÍO (SUPER)
-        Auto Chevrolet = new Auto();
+        VehiculoAuto Chevrolet = new VehiculoAuto();
         Chevrolet.setModelo("Corsa");
         Chevrolet.setColor("Azul");
         Chevrolet.setPeso(1600.00);
@@ -23,10 +20,10 @@ public class Main {
         Chevrolet.desacelerar(50);
 
         // INSTANCIA CONSTRUCTOR CON PARÁMETROS (SUPER)
-        Auto Ford = new Auto("Verde", "Focus", "Ford", 1650.80, 5.2, 50, motorGTI,"Motor 2.3");
+        VehiculoAuto Ford = new VehiculoAuto("Verde", "Focus", "Ford", 1650.80, 5.2, 50, motorGTI,"Motor 2.3");
         Ford.acelerar(80);
 
-        Motocicleta motoSuzuki = new Motocicleta ("Azul", "AX", "Suzuki", 400.00, 1.5, 80, "Calle", 100, 4, 2, suzuki1123);
+        VehiculoMoto motoSuzuki = new VehiculoMoto("Azul", "AX", "Suzuki", 400.00, 1.5, 80, "Calle", 100, 4, 2, suzuki1123);
         motoSuzuki.desacelerar(40);
 
         System.out.println(Chevrolet);

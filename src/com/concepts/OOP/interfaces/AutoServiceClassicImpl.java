@@ -1,13 +1,13 @@
 package com.concepts.OOP.interfaces;
 
 import com.concepts.OOP.Models.Vehiculo;
-import com.concepts.OOP.Models.herencia.Auto;
+import com.concepts.OOP.Models.VehiculoAuto;
 
 public class AutoServiceClassicImpl implements IAuto {
     @Override
     public Vehiculo crearAutoDemo() {
         System.out.println("Classic Service");
-        return new Auto();
+        return new VehiculoAuto();
     }
 
     @Override
