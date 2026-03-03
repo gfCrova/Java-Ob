@@ -1,5 +1,4 @@
 package com.patterns.designPatterns.Creatives.Singleton;
-
 /**
  * Implementación del patrón Singleton con inicialización perezosa (lazy initialization).
  *
@@ -13,13 +12,13 @@ public class Singleton {
 
     private Singleton() {}   // Constructor privado para evitar instanciación directa
 
-    /**  Double-Checked Locking: para obtener la instancia única de la clase Singleton.
-     * Hilo 1 entra al synchronized
-     * Crea la instancia
-     * Sale del bloque
-     * Hilo 2 entra después
-     * Si no hubiera segunda verificación → crearía otra instancia
-     **/
+    /** Double-Checked Locking: para obtener la instancia única de la clase Singleton.
+     *  1 - Hilo 1 entra al synchronized.
+     *  2 - Crea la instancia.
+     *  3 - Sale del bloque.
+     *  4 - Hilo 2 entra después.
+     *  5 - Si no hubiera segunda verificación → crearía otra instancia.
+     */
     public static Singleton getInstance() {
         if (instance == null) {
             synchronized (Singleton.class) {
