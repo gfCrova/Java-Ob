@@ -1,5 +1,4 @@
 package com.concepts.OOP.Beginning;
-
 /**
  * <h6>🔹 ABSTRACCIÓN mediante INTERFAZ</h6>
  *

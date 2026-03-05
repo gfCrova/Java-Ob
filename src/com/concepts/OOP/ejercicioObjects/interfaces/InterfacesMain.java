@@ -1,6 +1,6 @@
-package com.concepts.OOP.interfaces;
+package com.concepts.OOP.ejercicioObjects.interfaces;
 
-import com.concepts.OOP.Models.Vehiculo;
+import com.concepts.OOP.ejercicioObjects.Models.Vehiculo;
 
 /* Se define una interfaz ICoche con dos metodos: crearCocheDemo() y destruirCoche(Vehiculo auto).
    Luego, se crean dos implementaciones de esta interfaz: CocheServiceClassicImpl y CocheServiceSportImpl, cada una con su propia lógica para crear y destruir coches.

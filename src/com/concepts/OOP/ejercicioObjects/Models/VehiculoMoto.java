@@ -1,4 +1,4 @@
-package com.concepts.OOP.Models;
+package com.concepts.OOP.ejercicioObjects.Models;
 
 public class VehiculoMoto extends Vehiculo {
 

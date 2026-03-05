@@ -1,5 +1,4 @@
 package com.concepts.OOP.Beginning;
-
 /**
  * <h6>CuentaCorriente -> hereda de Cuenta.</h6>
  * <ul>

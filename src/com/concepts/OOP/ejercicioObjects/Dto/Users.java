@@ -1,4 +1,4 @@
-package com.concepts.OOP.Dto;
+package com.concepts.OOP.ejercicioObjects.Dto;
 
 import java.util.ArrayList;
 

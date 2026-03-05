@@ -1,8 +1,5 @@
 package com.concepts.OOP.Beginning;
 
-/**
- * Clase de prueba del sistema.
- */
 public class Main {
 
     public static void main(String[] args) {

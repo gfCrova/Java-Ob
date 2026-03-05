@@ -1,7 +1,7 @@
-package com.concepts.OOP.interfaces;
+package com.concepts.OOP.ejercicioObjects.interfaces;
 
-import com.concepts.OOP.Models.Vehiculo;
-import com.concepts.OOP.Models.VehiculoAuto;
+import com.concepts.OOP.ejercicioObjects.Models.Vehiculo;
+import com.concepts.OOP.ejercicioObjects.Models.VehiculoAuto;
 
 public class AutoServiceSportImpl implements IAuto {
     @Override
