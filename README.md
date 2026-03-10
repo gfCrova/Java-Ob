@@ -1,5 +1,18 @@
-<p><li>Ejercicios Curso Java Básico OB</li></p>
+## Java Básico
 
-<!-- <div align="center">
-<img src="https://desarrolloweb.com/storage/tag_images/actual/8VxgAXS5vXyI9RIEcpWlC3DxAAouJXWNgpOeHxll.png" width="350">
-</div> -->
+* datatypes
+* control structures
+* control operators
+* comments
+* exceptions
+* OOP
+* args
+* functions
+* IO
+
+## Java Avanzado
+
+* design patterns
+* behavior patterns
+* lambdas functions
+* recursived funtions
